@@ -1,0 +1,459 @@
+C:\Users\kaany\Desktop\Columbia\Spring 2021\Advanced DB\Projects\Project 1\SpanBERT>python IterativeSetExpansion.py AIzaSyAbUyFNJp6VrdunILLcN-OecO0K7_ZH1OU b305c2cc7c4272302 4 0.7 "bill gates microsoft" 10
+Loading pre-trained spanBERT from ./pretrained_spanbert
+___________
+Parameters:
+Client Key       =  AIzaSyAbUyFNJp6VrdunILLcN-OecO0K7_ZH1OU
+Engine Key       =  b305c2cc7c4272302
+Relation         =  org:top_members/employees
+Threshold        =  0.7
+Query            =  bill gates microsoft
+# of Tuples      =  10
+Loading necessary libraries; This should take a minute or so ...)
+=========== Iteration: 0 - Query: bill gates microsoft ===========
+
+
+URL (1 / 10): https://en.wikipedia.org/wiki/Bill_Gates
+        Fetching text from url ...
+        Webpage length (num characters):  20000
+        Annotating the webpage using spacy...
+Extracted 174 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+
+        Processed 5 / 174 sentences
+
+                ======= Extracted Relation ======
+                Sentence:
+
+
+American business magnate and philanthropist
+
+
+Bill GatesGates in 2017BornWilliam Henry Gates III (1955-10-28) October 28, 1955 (age 65)Seattle, Washington, U.S.EducationHarvard University (dropped out)OccupationSoftware developerinvestorentrepreneurYears active1975–presentNet w
+orthUS$138.8 billion (As of March 2021)Title
+Co-chairman and co-founder of the Bill & Melinda Gates Foundation
+Chairman and founder of Branded Entertainment Network
+Chairman and co-founder of TerraPower
+Chairman and founder of Cascade Investment
+Technology advisor of Microsoft
+Spouse(s)Melinda French ​(m.
+                Confidence: 0.6312631368637085 ;       Subject: TerraPower ;       Object: Spouse(s)Melinda;      Relation: org:top_members/employees
+                Confidence below threshold. Skipping...
+                ================================
+
+
+                ======= Extracted Relation ======
+                Sentence:
+
+
+American business magnate and philanthropist
+
+
+Bill GatesGates in 2017BornWilliam Henry Gates III (1955-10-28) October 28, 1955 (age 65)Seattle, Washington, U.S.EducationHarvard University (dropped out)OccupationSoftware developerinvestorentrepreneurYears active1975–presentNet w
+orthUS$138.8 billion (As of March 2021)Title
+Co-chairman and co-founder of the Bill & Melinda Gates Foundation
+Chairman and founder of Branded Entertainment Network
+Chairman and co-founder of TerraPower
+Chairman and founder of Cascade Investment
+Technology advisor of Microsoft
+Spouse(s)Melinda French ​(m.
+                Confidence: 0.6959474682807922 ;       Subject: Microsoft ;       Object: Spouse(s)Melinda;      Relation: org:top_members/employees
+                Confidence below threshold. Skipping...
+                ================================
+
+        Processed 10 / 174 sentences
+        Processed 15 / 174 sentences
+        Processed 20 / 174 sentences
+
+                ======= Extracted Relation ======
+                Sentence:  He stepped down as chairman of Microsoft in February 2014 and assumed a new post as technology adviser to support the newly appointed CEO Satya Nadella.
+                Confidence: 0.9918120503425598 ;       Subject: Microsoft ;       Object: Satya Nadella;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+
+                ======= Extracted Relation ======
+                Sentence:  In March 2020, Gates left his board positions at Microsoft and Berkshire Hathaway to focus on his philanthropic endeavors including climate change, global health and development, and education.
+                Confidence: 0.9681163430213928 ;       Subject: Microsoft ;       Object: Gates;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+
+                ======= Extracted Relation ======
+                Sentence:  In October 2017, he was surpassed by Amazon founder and CEO Jeff Bezos, who had an estimated net worth of US$90.6 billion compared to Gates's net worth of US$89.9 billion at the time.
+                Confidence: 0.9927783012390137 ;       Subject: Gates ;       Object: Jeff Bezos;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+        Processed 25 / 174 sentences
+        Processed 30 / 174 sentences
+        Processed 35 / 174 sentences
+        Processed 40 / 174 sentences
+        Processed 45 / 174 sentences
+        Processed 50 / 174 sentences
+        Processed 55 / 174 sentences
+        Processed 60 / 174 sentences
+        Processed 65 / 174 sentences
+        Processed 70 / 174 sentences
+
+                ======= Extracted Relation ======
+                Sentence:  Years later, Ballmer succeeded Gates as Microsoft's CEO and maintained that position from 2000 until his resignation in 2014.
+                Confidence: 0.9897286295890808 ;       Subject: Microsoft ;       Object: Ballmer;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+        Processed 75 / 174 sentences
+        Processed 80 / 174 sentences
+        Processed 85 / 174 sentences
+        Processed 90 / 174 sentences
+        Processed 95 / 174 sentences
+        Processed 100 / 174 sentences
+        Processed 105 / 174 sentences
+
+                ======= Extracted Relation ======
+                Sentence:  IBM representative Jack Sams mentioned the licensing difficulties during a subsequent meeting with Gates and asked if Microsoft could provide an operating system.
+                Confidence: 0.891942024230957 ;       Subject: IBM ;       Object: Jack Sams;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+        Processed 110 / 174 sentences
+        Processed 115 / 174 sentences
+        Processed 120 / 174 sentences
+        Processed 125 / 174 sentences
+        Processed 130 / 174 sentences
+        Processed 135 / 174 sentences
+        Processed 140 / 174 sentences
+        Processed 145 / 174 sentences
+        Processed 150 / 174 sentences
+        Processed 155 / 174 sentences
+        Processed 160 / 174 sentences
+        Processed 165 / 174 sentences
+
+                ======= Extracted Relation ======
+                Sentence:  On February 4, 2014, Gates stepped down as chairman of Microsoft to become "technology advisor" alongside CEO Satya Nadella.
+                Confidence: 0.9869161248207092 ;       Subject: Gates ;       Object: Satya Nadella;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+
+                ======= Extracted Relation ======
+                Sentence:  On February 4, 2014, Gates stepped down as chairman of Microsoft to become "technology advisor" alongside CEO Satya Nadella.
+                Confidence: 0.988355278968811 ;       Subject: Microsoft ;       Object: Satya Nadella;      Relation: org:top_members/employees
+                Duplicate tuple found with lower confidence. Ignoring this...
+                ================================
+
+        Processed 170 / 174 sentences
+        Extracted annotations for 174 sentences
+        Unique relations extracted from this website: 6 (Overall: 7)
+
+
+URL (2 / 10): https://www.gatesnotes.com/
+        Fetching text from url ...
+ERROR:root:Unable to fetch URL. Continuing.
+
+
+URL (3 / 10): https://twitter.com/billgates?lang=en
+        Fetching text from url ...
+        Annotating the webpage using spacy...
+Extracted 9 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+
+        Processed 5 / 9 sentences
+        Extracted annotations for 9 sentences
+        Unique relations extracted from this website: 0 (Overall: 0)
+
+
+URL (4 / 10): https://news.microsoft.com/2020/03/13/microsoft-announces-change-to-its-board-of-directors/
+        Fetching text from url ...
+ERROR:root:Unable to fetch URL. Continuing.
+
+
+URL (5 / 10): https://www.nytimes.com/2020/03/13/technology/bill-gates-microsoft-board.html
+        Fetching text from url ...
+        Annotating the webpage using spacy...
+Extracted 45 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+
+        Processed 5 / 45 sentences
+        Processed 10 / 45 sentences
+        Processed 15 / 45 sentences
+        Processed 20 / 45 sentences
+        Processed 25 / 45 sentences
+
+                ======= Extracted Relation ======
+                Sentence:  Mr. Gates joined the Berkshire Hathaway board in 2004.
+                Confidence: 0.9807723760604858 ;       Subject: Berkshire Hathaway ;       Object: Gates;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+
+                ======= Extracted Relation ======
+                Sentence:  The conglomerate has nominated Kenneth Chenault, the former chief executive of American Express, to replace Mr. Gates on the board.
+                Confidence: 0.9890002012252808 ;       Subject: American Express ;       Object: Gates;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+
+                ======= Extracted Relation ======
+                Sentence:  Daniel Ives, managing director of equity research at Wedbush Securities, said in a research note that Mr. Gates’s stepping down from the Microsoft board was not a surprise and that it was a vote of confide
+nce for Mr. Nadella and the direction of the company.
+                Confidence: 0.9648240804672241 ;       Subject: Wedbush Securities ;       Object: Daniel Ives;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+        Processed 30 / 45 sentences
+        Processed 35 / 45 sentences
+        Processed 40 / 45 sentences
+        Processed 45 / 45 sentences
+        Extracted annotations for 45 sentences
+        Unique relations extracted from this website: 3 (Overall: 3)
+
+
+URL (6 / 10): https://www.britannica.com/biography/Bill-Gates
+        Fetching text from url ...
+        Annotating the webpage using spacy...
+Extracted 110 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+
+        Processed 5 / 110 sentences
+        Processed 10 / 110 sentences
+        Processed 15 / 110 sentences
+        Processed 20 / 110 sentences
+        Processed 25 / 110 sentences
+        Processed 30 / 110 sentences
+        Processed 35 / 110 sentences
+        Processed 40 / 110 sentences
+        Processed 45 / 110 sentences
+        Processed 50 / 110 sentences
+        Processed 55 / 110 sentences
+        Processed 60 / 110 sentences
+        Processed 65 / 110 sentences
+        Processed 70 / 110 sentences
+
+                ======= Extracted Relation ======
+                Sentence:  After a short transition period, Gates relinquished day-to-day oversight of Microsoft in June 2008—although he remained chairman of the board—in order to devote more time to the Bill & Melinda Gates Founda
+tion.
+                Confidence: 0.8306182026863098 ;       Subject: the Bill & Melinda Gates Foundation ;       Object: Gates;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+        Processed 75 / 110 sentences
+
+                ======= Extracted Relation ======
+                Sentence:  The documentary series Inside Bill’s Brain: Decoding Bill Gates appeared in 2019.Bill GatesMicrosoft Corporation chairman Bill Gates introduces the Windows XP operating system at a press conference in 2001
+.PRNewsFoto/Waggener Edstrom/AP ImagesBill and Melinda GatesBill and Melinda Gates, 2009.
+                Confidence: 0.7992016077041626 ;       Subject: Waggener Edstrom/AP ImagesBill ;       Object: Bill Gates;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+        Processed 80 / 110 sentences
+
+                ======= Extracted Relation ======
+                Sentence:  ”J Allard and Bill GatesMicrosoft corporate vice president J Allard (left) and chairman Bill Gates unveiling the company's latest Zune media players.
+                Confidence: 0.9853277206420898 ;       Subject: Zune ;       Object: ”J Allard;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+
+                ======= Extracted Relation ======
+                Sentence:  ”J Allard and Bill GatesMicrosoft corporate vice president J Allard (left) and chairman Bill Gates unveiling the company's latest Zune media players.
+                Confidence: 0.9866676330566406 ;       Subject: Zune ;       Object: J Allard;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+
+                ======= Extracted Relation ======
+                Sentence:  ”J Allard and Bill GatesMicrosoft corporate vice president J Allard (left) and chairman Bill Gates unveiling the company's latest Zune media players.
+                Confidence: 0.9906314015388489 ;       Subject: Zune ;       Object: Bill Gates;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+        Processed 85 / 110 sentences
+        Processed 90 / 110 sentences
+        Processed 95 / 110 sentences
+        Processed 100 / 110 sentences
+        Processed 105 / 110 sentences
+        Processed 110 / 110 sentences
+        Extracted annotations for 110 sentences
+        Unique relations extracted from this website: 5 (Overall: 5)
+
+
+URL (7 / 10): https://www.technologyreview.com/2021/02/14/1018296/bill-gates-climate-change-beef-trees-microsoft/
+        Fetching text from url ...
+        Annotating the webpage using spacy...
+Extracted 140 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+
+        Processed 5 / 140 sentences
+
+                ======= Extracted Relation ======
+                Sentence:  The Microsoft cofounder, who is now cochair of the Bill and Melinda Gates Foundation and chair of the investment fund Breakthrough Energy Ventures, sticks to his past argument that we’ll need numerous ener
+gy breakthroughs to have any hope of cleaning up all parts of the economy and the poorest parts of the world.
+                Confidence: 0.882738471031189 ;       Subject: Microsoft ;       Object: Bill;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+
+                ======= Extracted Relation ======
+                Sentence:  The Microsoft cofounder, who is now cochair of the Bill and Melinda Gates Foundation and chair of the investment fund Breakthrough Energy Ventures, sticks to his past argument that we’ll need numerous ener
+gy breakthroughs to have any hope of cleaning up all parts of the economy and the poorest parts of the world.
+                Confidence: 0.988042414188385 ;       Subject: Melinda Gates Foundation ;       Object: Bill;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+
+                ======= Extracted Relation ======
+                Sentence:  The Microsoft cofounder, who is now cochair of the Bill and Melinda Gates Foundation and chair of the investment fund Breakthrough Energy Ventures, sticks to his past argument that we’ll need numerous ener
+gy breakthroughs to have any hope of cleaning up all parts of the economy and the poorest parts of the world.
+                Confidence: 0.9867335557937622 ;       Subject: Breakthrough Energy Ventures ;       Object: Bill;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+        Processed 10 / 140 sentences
+        Processed 15 / 140 sentences
+        Processed 20 / 140 sentences
+        Processed 25 / 140 sentences
+        Processed 30 / 140 sentences
+        Processed 35 / 140 sentences
+        Processed 40 / 140 sentences
+        Processed 45 / 140 sentences
+        Processed 50 / 140 sentences
+        Processed 55 / 140 sentences
+        Processed 60 / 140 sentences
+        Processed 65 / 140 sentences
+        Processed 70 / 140 sentences
+        Processed 75 / 140 sentences
+        Processed 80 / 140 sentences
+        Processed 85 / 140 sentences
+        Processed 90 / 140 sentences
+        Processed 95 / 140 sentences
+        Processed 100 / 140 sentences
+        Processed 105 / 140 sentences
+        Processed 110 / 140 sentences
+        Processed 115 / 140 sentences
+        Processed 120 / 140 sentences
+        Processed 125 / 140 sentences
+        Processed 130 / 140 sentences
+        Processed 135 / 140 sentences
+        Processed 140 / 140 sentences
+        Extracted annotations for 140 sentences
+        Unique relations extracted from this website: 3 (Overall: 3)
+
+
+URL (8 / 10): https://www.linkedin.com/in/williamhgates
+        Fetching text from url ...
+ERROR:root:Unable to fetch URL. Continuing.
+
+
+URL (9 / 10): https://www.forbes.com/profile/bill-gates/
+        Fetching text from url ...
+        Annotating the webpage using spacy...
+Extracted 70 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+
+        Processed 5 / 70 sentences
+        Processed 10 / 70 sentences
+        Processed 15 / 70 sentences
+        Processed 20 / 70 sentences
+        Processed 25 / 70 sentences
+        Processed 30 / 70 sentences
+
+                ======= Extracted Relation ======
+                Sentence:  In mid-March 2020, Gates stepped down as a board member of Microsoft, the software firm he founded with Paul Allen (d. 2018) in 1975.The foundation works to improve global health and to create equal opport
+unity for people around the globe.
+                Confidence: 0.9002493619918823 ;       Subject: Microsoft ;       Object: Paul Allen;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+        Processed 35 / 70 sentences
+        Processed 40 / 70 sentences
+        Processed 45 / 70 sentences
+        Processed 50 / 70 sentences
+
+                ======= Extracted Relation ======
+                Sentence:  ByJonathan PoncianoForbes StaffFeb 28, 2021The $20,000 PC Encrusted With Diamonds And Bill GatesThis PC has over $15,000 worth of diamonds insideByAntony LeatherSenior ContributorFeb 26, 2021Bill Gates Iss
+ues Serious Bitcoin Warning As Tesla Billionaire Elon Musk Stokes Crypto Price ‘Mania’Billionaires from Microsoft founder-turned global philanthropist Bill Gates to Tesla chief executive Elon Musk are weighing in on bitcoin...
+                Confidence: 0.9874790906906128 ;       Subject: Tesla ;       Object: Elon Musk;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+        Processed 55 / 70 sentences
+        Processed 60 / 70 sentences
+        Processed 65 / 70 sentences
+        Processed 70 / 70 sentences
+        Extracted annotations for 70 sentences
+        Unique relations extracted from this website: 2 (Overall: 2)
+
+
+URL (10 / 10): https://www.biography.com/business-figure/bill-gates
+        Fetching text from url ...
+        Webpage length (num characters):  20000
+        Annotating the webpage using spacy...
+Extracted 175 sentences. Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+
+        Processed 5 / 175 sentences
+        Processed 10 / 175 sentences
+        Processed 15 / 175 sentences
+        Processed 20 / 175 sentences
+        Processed 25 / 175 sentences
+        Processed 30 / 175 sentences
+        Processed 35 / 175 sentences
+        Processed 40 / 175 sentences
+        Processed 45 / 175 sentences
+        Processed 50 / 175 sentences
+        Processed 55 / 175 sentences
+        Processed 60 / 175 sentences
+        Processed 65 / 175 sentences
+        Processed 70 / 175 sentences
+        Processed 75 / 175 sentences
+        Processed 80 / 175 sentences
+        Processed 85 / 175 sentences
+        Processed 90 / 175 sentences
+        Processed 95 / 175 sentences
+        Processed 100 / 175 sentences
+        Processed 105 / 175 sentences
+        Processed 110 / 175 sentences
+        Processed 115 / 175 sentences
+        Processed 120 / 175 sentences
+        Processed 125 / 175 sentences
+        Processed 130 / 175 sentences
+
+                ======= Extracted Relation ======
+                Sentence:  In mid-1981, Gates and Allen incorporated Microsoft, and Gates was appointed president and chairman of the board.
+                Confidence: 0.942493736743927 ;       Subject: Gates ;       Object: Allen;      Relation: org:top_members/employees
+                Appropriate tuple found. Appending tuple...
+                ================================
+
+        Processed 135 / 175 sentences
+        Processed 140 / 175 sentences
+        Processed 145 / 175 sentences
+        Processed 150 / 175 sentences
+        Processed 155 / 175 sentences
+        Processed 160 / 175 sentences
+        Processed 165 / 175 sentences
+        Processed 170 / 175 sentences
+        Processed 175 / 175 sentences
+        Extracted annotations for 175 sentences
+        Unique relations extracted from this website: 1 (Overall: 1)
+================== ALL RELATIONS for org:top_members/employees ( 20 ) =================
+Confidence: 0.9927783012390137          | Subject: Gates                | Object: Jeff Bezos
+Confidence: 0.9918120503425598          | Subject: Microsoft            | Object: Satya Nadella
+Confidence: 0.9906314015388489          | Subject: Zune                 | Object: Bill Gates
+Confidence: 0.9897286295890808          | Subject: Microsoft            | Object: Ballmer
+Confidence: 0.9890002012252808          | Subject: American Express             | Object: Gates
+Confidence: 0.988042414188385           | Subject: Melinda Gates Foundation             | Object: Bill
+Confidence: 0.9874790906906128          | Subject: Tesla                | Object: Elon Musk
+Confidence: 0.9869161248207092          | Subject: Gates                | Object: Satya Nadella
+Confidence: 0.9867335557937622          | Subject: Breakthrough Energy Ventures                 | Object: Bill
+Confidence: 0.9866676330566406          | Subject: Zune                 | Object: J Allard
+Confidence: 0.9853277206420898          | Subject: Zune                 | Object: ”J Allard
+Confidence: 0.9807723760604858          | Subject: Berkshire Hathaway           | Object: Gates
+Confidence: 0.9681163430213928          | Subject: Microsoft            | Object: Gates
+Confidence: 0.9648240804672241          | Subject: Wedbush Securities           | Object: Daniel Ives
+Confidence: 0.942493736743927           | Subject: Gates                | Object: Allen
+Confidence: 0.9002493619918823          | Subject: Microsoft            | Object: Paul Allen
+Confidence: 0.891942024230957           | Subject: IBM          | Object: Jack Sams
+Confidence: 0.882738471031189           | Subject: Microsoft            | Object: Bill
+Confidence: 0.8306182026863098          | Subject: the Bill & Melinda Gates Foundation          | Object: Gates
+Confidence: 0.7992016077041626          | Subject: Waggener Edstrom/AP ImagesBill               | Object: Bill Gates
+Total # of iterations = 1
